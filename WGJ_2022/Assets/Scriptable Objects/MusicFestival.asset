@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: MusicFestival
   m_EditorClassIdentifier: 
   type: 2
-  rightOption: 0
-  wrongOption: 0
-  rightOptionAnswer: []
-  wrongOptionAnswer: []
-  neutralOptionAnswer: []
+  rightOption: 8
+  wrongOption: 7
+  rightOptionAnswer:
+  - "Ser\xE1 que vale a pena dar uma chance a essa galera nova na m\xFAsica?"
+  wrongOptionAnswer:
+  - "Bom, \xE9 o que temos para hoje."
+  neutralOptionAnswer:
+  - "Ningu\xE9m aguenta mais a vizinhan\xE7a barulhenta a noite toda, REVOLU\xC7\xC3O
+    J\xC1!"

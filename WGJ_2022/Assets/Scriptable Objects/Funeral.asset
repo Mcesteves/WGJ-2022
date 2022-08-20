@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Funeral
   m_EditorClassIdentifier: 
   type: 3
-  rightOption: 0
-  wrongOption: 0
-  rightOptionAnswer: []
-  wrongOptionAnswer: []
-  neutralOptionAnswer: []
+  rightOption: 9
+  wrongOption: 10
+  rightOptionAnswer:
+  - "Ah... L\xE1 se foram todas as sete vidas do meu amado... Eu acho."
+  wrongOptionAnswer:
+  - "\xC9 n\xE9, esse dia chega para todos."
+  neutralOptionAnswer:
+  - Meu marido rico DEFINITIVAMENTE morreu de causas misteriosas... Hehe.

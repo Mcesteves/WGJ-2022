@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939343c5e4428344baab7452bebee81e, type: 3}
   m_Name: VintageGala
   m_EditorClassIdentifier: 
-  type: 0
-  rightOption: 0
-  wrongOption: 0
-  rightOptionAnswer: []
-  wrongOptionAnswer: []
-  neutralOptionAnswer: []
+  type: 4
+  rightOption: 3
+  wrongOption: 2
+  rightOptionAnswer:
+  - "Gatos n\xE3o t\xEAm muito o que fazer, n\xE3o \xE9 mesmo?"
+  wrongOptionAnswer:
+  - "As pessoas v\xE3o entender que estou s\xF3 de passagem, n\xE3o queria estar
+    l\xE1 mesmo."
+  neutralOptionAnswer:
+  - "Ser chique \xE9 paia, o bagulho \xE9 ficar na r\xE9gua!"

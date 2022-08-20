@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939343c5e4428344baab7452bebee81e, type: 3}
   m_Name: Tree
   m_EditorClassIdentifier: 
-  type: 0
-  rightOption: 0
+  type: 5
+  rightOption: 1
   wrongOption: 0
-  rightOptionAnswer: []
-  wrongOptionAnswer: []
-  neutralOptionAnswer: []
+  rightOptionAnswer:
+  - "Eu realmente n\xE3o poderei mostrar meu verdadeiro potencial\u2026"
+  wrongOptionAnswer:
+  - "Quem sabe a dire\xE7\xE3o n\xE3o reveja meu papel dessa forma?"
+  neutralOptionAnswer:
+  - Finalmente mostrarei ao mundo a estrela que eu nasci para ser!
