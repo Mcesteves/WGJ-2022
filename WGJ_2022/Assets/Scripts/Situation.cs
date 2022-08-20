@@ -21,8 +21,8 @@ public class Situation : ScriptableObject
     public AccessoryType rightOption;
     public AccessoryType wrongOption;
     public List<string> rightOptionAnswer;
-    public List<Text> wrongOptionAnswer;
-    public List<Text> neutralOptionAnswer;
+    public List<string> wrongOptionAnswer;
+    public List<string> neutralOptionAnswer;
 
     private string _answer;
     private void Start()
