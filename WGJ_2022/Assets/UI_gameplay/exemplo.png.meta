@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16aacbf3d5af9f0469faba64ccd04e71
+guid: d43fd3373b58b834fa4463fc8f9f4a7a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coelho_0
+      name: exemplo_0
       rect:
         serializedVersion: 2
-        x: 797
-        y: 573
-        width: 326
-        height: 200
+        x: 51
+        y: 0
+        width: 1281
+        height: 721
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 390bd0a661ca0734f94dc37a46f82b58
-      internalID: -1918402386
+      spriteID: 92041be366568a447a12cac48f60f74a
+      internalID: 1782127176
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      coelho_0: -1918402386
+      exemplo_0: 1782127176
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
