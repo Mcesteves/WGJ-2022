@@ -18,13 +18,17 @@ public enum SituationType
 public class Situation : ScriptableObject
 {
     public SituationType type;
+    public Cat cat;
     public AccessoryType rightOption;
     public AccessoryType wrongOption;
-    public List<string> rightOptionAnswer;
-    public List<string> wrongOptionAnswer;
-    public List<string> neutralOptionAnswer;
+    public List<Dialogue> rightOptionAnswers;
+    public List<Dialogue> wrongOptionAnswers;
+    public List<Dialogue> neutralOptionAnswers;
+    public List<Dialogue> introductions;
+    public List<string> descriptions;
+    public bool started;
 
-    private string _answer;
+    private Dialogue _answer;
     private void Start()
     {
 
@@ -34,35 +38,57 @@ public class Situation : ScriptableObject
     {
         if(choosenType == rightOption)
         {
-            _answer = BuildText(rightOptionAnswer);
+            _answer = ChooseDialogue(rightOptionAnswers);
             return 100;
         }
         else if(choosenType == wrongOption)
         {
-            _answer = BuildText(wrongOptionAnswer);
+            _answer = ChooseDialogue(wrongOptionAnswers);
             return 0;
         }
         else
         {
-            _answer = BuildText(neutralOptionAnswer);
+            _answer = ChooseDialogue(neutralOptionAnswers);
             return 50;
         }
     }
 
-    public string GetAnswer()
+    public Dialogue GetIntroduction()
+    {
+        return ChooseDialogue(introductions);
+    }
+
+    public Dialogue GetAnswer()
     {
         return _answer;
     }
 
-    private string BuildText(IEnumerable optionList)
+    public string GetDescription()
     {
-        string answer = "";
+        return ChooseDescription(descriptions);
+    }
 
-        foreach(var text in optionList)
+
+
+    public Dialogue ChooseDialogue(List<Dialogue> dialogues)
+    {
+        switch (LanguageManager.instance.activeLanguage)
         {
-            answer += text + "\n";
+            case Language.Portuguese:
+                return dialogues[0];
+            default:
+                return dialogues[1];
         }
+    }
 
-        return answer;
+    public string ChooseDescription(List<string> strings)
+    {
+        switch (LanguageManager.instance.activeLanguage)
+        {
+            case Language.Portuguese:
+                return strings[0];
+            default:
+                return strings[1];
+        }
     }
 }

@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: XMas
   m_EditorClassIdentifier: 
   type: 0
+  cat: {fileID: 11400000, guid: 099de70367c812848bce39676c7baabd, type: 2}
   rightOption: 4
   wrongOption: 11
-  rightOptionAnswer:
-  - "Ah, aquela \xE9poca do ano onde todos s\xE3o fingidos... todo mundo ama se passar
-    de bonzinho."
-  wrongOptionAnswer:
-  - Hm, posso aproveitar a comida sossegada, pelo menos.
-  neutralOptionAnswer:
-  - "Isso, ISSO! Voc\xEA me entende! S\xF3 esquisitos preferem ser julgados por um
-    velho barbudo, um chocolatinho de P\xE1scoa \xE9 muito melhor!"
+  rightOptionAnswers: []
+  wrongOptionAnswers: []
+  neutralOptionAnswers: []
+  introductions: []
+  descriptions: []
+  started: 0

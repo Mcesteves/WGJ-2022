@@ -13,11 +13,17 @@ MonoBehaviour:
   m_Name: Funeral
   m_EditorClassIdentifier: 
   type: 3
+  cat: {fileID: 11400000, guid: 5351a7bd8f445504bb4dc4fb3ff79ee0, type: 2}
   rightOption: 9
   wrongOption: 10
-  rightOptionAnswer:
-  - "Ah... L\xE1 se foram todas as sete vidas do meu amado... Eu acho."
-  wrongOptionAnswer:
-  - "\xC9 n\xE9, esse dia chega para todos."
-  neutralOptionAnswer:
-  - Meu marido rico DEFINITIVAMENTE morreu de causas misteriosas... Hehe.
+  rightOptionAnswers:
+  - {fileID: 11400000, guid: 571895aed4d2482469871fe4fea6d27e, type: 2}
+  wrongOptionAnswers:
+  - {fileID: 11400000, guid: 506e0927d4d20d548a2dfd56ad2fc0bf, type: 2}
+  neutralOptionAnswers:
+  - {fileID: 11400000, guid: aa2f6a6cc349b7344ba9f9f2e9a0d39c, type: 2}
+  introductions:
+  - {fileID: 11400000, guid: 0ed781da77873b94492ca3fda559fff4, type: 2}
+  descriptions:
+  - "Vel\xF3rio"
+  started: 0

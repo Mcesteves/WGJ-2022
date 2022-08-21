@@ -13,11 +13,17 @@ MonoBehaviour:
   m_Name: Tree
   m_EditorClassIdentifier: 
   type: 5
+  cat: {fileID: 11400000, guid: 2bd169c510f144a4082b28d998c8f82e, type: 2}
   rightOption: 1
   wrongOption: 0
-  rightOptionAnswer:
-  - "Eu realmente n\xE3o poderei mostrar meu verdadeiro potencial\u2026"
-  wrongOptionAnswer:
-  - "Quem sabe a dire\xE7\xE3o n\xE3o reveja meu papel dessa forma?"
-  neutralOptionAnswer:
-  - Finalmente mostrarei ao mundo a estrela que eu nasci para ser!
+  rightOptionAnswers:
+  - {fileID: 11400000, guid: 428ccb656f64e1745a4d7fd1fb277b8f, type: 2}
+  wrongOptionAnswers:
+  - {fileID: 11400000, guid: 3d0bf874e4bd79746ac4452e25c5308f, type: 2}
+  neutralOptionAnswers:
+  - {fileID: 11400000, guid: 9d8423fbd2641cb4780845d2ab62b0a2, type: 2}
+  introductions:
+  - {fileID: 11400000, guid: d92200d1611aa824d886f595866b6248, type: 2}
+  descriptions:
+  - "Fazer papel de \xE1rvore"
+  started: 0

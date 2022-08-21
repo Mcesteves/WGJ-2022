@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: VintageGala
   m_EditorClassIdentifier: 
   type: 4
+  cat: {fileID: 11400000, guid: 187bf989156245945ae6d6485c8bd6dd, type: 2}
   rightOption: 3
   wrongOption: 2
-  rightOptionAnswer:
-  - "Gatos n\xE3o t\xEAm muito o que fazer, n\xE3o \xE9 mesmo?"
-  wrongOptionAnswer:
-  - "As pessoas v\xE3o entender que estou s\xF3 de passagem, n\xE3o queria estar
-    l\xE1 mesmo."
-  neutralOptionAnswer:
-  - "Ser chique \xE9 paia, o bagulho \xE9 ficar na r\xE9gua!"
+  rightOptionAnswers: []
+  wrongOptionAnswers: []
+  neutralOptionAnswers: []
+  introductions: []
+  descriptions: []
+  started: 0

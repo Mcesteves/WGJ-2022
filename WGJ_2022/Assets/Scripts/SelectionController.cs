@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SelectionController : MonoBehaviour
 {
@@ -10,33 +11,60 @@ public class SelectionController : MonoBehaviour
     public Cat activeCat;
     public Situation activeSituation;
     public GameObject catObject;
+    public TextMeshProUGUI situationDescription;
 
-    public List<Cat> cats;
     public List<Situation> situations;
+
+    private DialogueManager _dialogueManager;
     [HideInInspector]public AccessoryType selectedAccessory;
 
     void Start()
     {
-        SortCat();
-        SortSituation();
-        catObject.GetComponent<Image>().sprite = activeCat.neutralSprite;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void SortCat()
-    {
-        int option = Random.Range(0, cats.Count);
-        activeCat = cats[option];
+        _dialogueManager = GetComponent<DialogueManager>();      
     }
 
     public void SortSituation()
     {
         int option = Random.Range(0, situations.Count);
-        activeSituation = situations[option];
+        SetActiveSituation(situations[option]);
     }
+
+    public void SetActiveSituation(Situation situation)
+    {
+        activeSituation = situation;
+        activeCat = activeSituation.cat;
+        catObject.GetComponent<Image>().sprite = activeCat.neutralSprite;
+    }
+
+    public void PressYes()
+    {
+        int points = activeSituation.CheckChoice(selectedAccessory);
+        _dialogueManager.StartDialog(activeSituation.GetAnswer(), false);
+        //Next();
+    }
+
+    public void PressNo()
+    {
+        return;
+    }
+
+    public void ShowSituation()
+    {
+        situationDescription.text = activeSituation.GetDescription();
+    }
+
+    public void Next()
+    {
+        StartCoroutine(ShowNextCustomer());
+    }
+
+    IEnumerator ShowNextCustomer()
+    {
+        catObject.SetActive(false);
+        yield return new WaitForSeconds(2f);
+        SortSituation();
+        catObject.SetActive(true);
+        _dialogueManager.StartDialog(activeSituation.GetIntroduction(), true);
+    }
+
 }

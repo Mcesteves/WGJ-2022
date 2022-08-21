@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: MovieTheatre
   m_EditorClassIdentifier: 
   type: 1
+  cat: {fileID: 11400000, guid: 7238b6388836a014595b1028a3e29176, type: 2}
   rightOption: 6
   wrongOption: 5
-  rightOptionAnswer:
-  - "J\xE1 n\xE3o basta ser m\xEDope, ainda tenho que ver filme 3D com \xF3culos
-    an\xE1glifos?"
-  wrongOptionAnswer:
-  - "Espero que o ingresso valha a pena, n\xE3o comprei pipoca e refrigerante caro
-    \xE0 toa."
-  neutralOptionAnswer:
-  - Haha! Quero ver piratearem o filme agora!
+  rightOptionAnswers: []
+  wrongOptionAnswers: []
+  neutralOptionAnswers: []
+  introductions: []
+  descriptions: []
+  started: 0
