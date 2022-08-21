@@ -26,7 +26,7 @@ public class Situation : ScriptableObject
     public List<Dialogue> neutralOptionAnswers;
     public List<Dialogue> introductions;
     public List<string> descriptions;
-    public bool started;
+    public bool isDone;
 
     private Dialogue _answer;
     private void Start()

@@ -6,20 +6,31 @@ using TMPro;
 
 public class SelectionController : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public Cat activeCat;
     public Situation activeSituation;
     public GameObject catObject;
     public GameObject accessory;
     public GameObject accessoryBack;
     public TextMeshProUGUI situationDescription;
-
+    public GameObject EndCanvas;
     public List<Situation> situations;
+    [HideInInspector] public AccessoryType selectedAccessory;
 
     private DialogueManager _dialogueManager;
-    [HideInInspector]public AccessoryType selectedAccessory;
+    private int clients;
+    private int _points;
+    [SerializeField]
+    private Sprite earlessHappyCat;
+    private Sprite earlessSadCat;
 
+
+    private void Awake()
+    {
+        foreach(Situation situation in situations)
+        {
+            situation.isDone = false;
+        }
+    }
     void Start()
     {
         _dialogueManager = GetComponent<DialogueManager>();      
@@ -28,6 +39,8 @@ public class SelectionController : MonoBehaviour
     public void SortSituation()
     {
         int option = Random.Range(0, situations.Count);
+        while (situations[option].isDone)
+            option = Random.Range(0, situations.Count);
         SetActiveSituation(situations[option]);
     }
 
@@ -40,13 +53,8 @@ public class SelectionController : MonoBehaviour
 
     public void PressYes()
     {
-        int points = activeSituation.CheckChoice(selectedAccessory);
+        _points += activeSituation.CheckChoice(selectedAccessory);
         _dialogueManager.StartDialog(activeSituation.GetAnswer(), false);
-    }
-
-    public void PressNo()
-    {
-        return;
     }
 
     public void ShowSituation()
@@ -59,11 +67,24 @@ public class SelectionController : MonoBehaviour
         StartCoroutine(ShowNextCustomer());
     }
 
+    public void ShowEnd()
+    {
+        EndCanvas.SetActive(true);
+    }
+
     IEnumerator ShowNextCustomer()
     {
+        clients++;
+        if (clients == 5)
+        {
+            yield return new WaitForSeconds(0.5f);
+            ShowEnd();
+            yield break;
+        }  
         catObject.SetActive(false);
         accessory.SetActive(false);
         accessoryBack.SetActive(false);
+        activeSituation.isDone = true;
         yield return new WaitForSeconds(2f);
         SortSituation();
         catObject.SetActive(true);

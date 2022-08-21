@@ -17,7 +17,14 @@ public class OptionButton : MonoBehaviour
     {
         if (selectionController.activeCat.isSmaller && accessory.type == AccessoryType.Headband)
             accessory = grisHeadBand;
-
+        if(accessory.type == AccessoryType.DuctTape)
+        {
+            selectionController.catObject.GetComponent<Image>().sprite = selectionController.activeCat.earlessSprite;
+            accessoryObj.SetActive(false);
+            accessoryObjBack.SetActive(false);
+            return;
+        }
+        selectionController.catObject.GetComponent<Image>().sprite = selectionController.activeCat.neutralSprite;
         accessoryObj.GetComponent<Image>().sprite = accessory.objectSprite;
         if (accessory.hasBack)
         {

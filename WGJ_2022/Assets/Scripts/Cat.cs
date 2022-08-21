@@ -9,6 +9,7 @@ public class Cat : ScriptableObject
     public Sprite happySprite;
     public Sprite neutralSprite;
     public Sprite sadSprite;
+    public Sprite earlessSprite;
     public bool isSmaller;
 
 

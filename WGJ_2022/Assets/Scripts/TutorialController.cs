@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class TutorialController : MonoBehaviour
 {
     public Situation tutorialSituation;
-
     private SelectionController _selectionController;
     private DialogueManager _dialogueManager;
-    private int _points;
 
     private void Awake()
     {
@@ -20,14 +18,9 @@ public class GameManager : MonoBehaviour
         StartCoroutine(StartTutorialCoroutine());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void StartTutorial()
     {
+        _selectionController.catObject.SetActive(true);
         _selectionController.SetActiveSituation(tutorialSituation);
         _dialogueManager.StartDialog(_selectionController.activeSituation.GetIntroduction(), true);
         _selectionController.ShowSituation();
