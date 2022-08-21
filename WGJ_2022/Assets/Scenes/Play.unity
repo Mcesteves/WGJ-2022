@@ -446,7 +446,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fa3fd6c1d3c84c747af11b435f772ed5, type: 2}
   - {fileID: 11400000, guid: b1e7fb50f20f9a54792b0b203862f65b, type: 2}
   selectedAccessory: 0
-  earlessHappyCat: {fileID: 0}
+  earlessHappyCat: {fileID: 21300000, guid: e1dd97ccad52308438fcaeae24c7bde9, type: 3}
 --- !u!114 &140248588
 MonoBehaviour:
   m_ObjectHideFlags: 0

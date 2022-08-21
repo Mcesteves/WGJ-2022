@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Castiel
   m_EditorClassIdentifier: 
   catName: Castiel
-  happySprite: {fileID: 21300000, guid: 9750eb838ac32c44fb108a072772d097, type: 3}
+  happySprite: {fileID: 21300000, guid: e1dd97ccad52308438fcaeae24c7bde9, type: 3}
   neutralSprite: {fileID: 21300000, guid: 78b386b17a1a4e449a863655a2216d8b, type: 3}
   sadSprite: {fileID: 21300000, guid: 63709f37bf5d0764abaa8ce0b77d1f9c, type: 3}
   earlessSprite: {fileID: 21300000, guid: 3b716db51af28ca4eb665f33c4268fb5, type: 3}

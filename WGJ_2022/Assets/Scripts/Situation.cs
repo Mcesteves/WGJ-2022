@@ -14,6 +14,13 @@ public enum SituationType
     Tree
 }
 
+public enum Result
+{
+    Happy,
+    Sad,
+    Neutral
+}
+
 [CreateAssetMenu(fileName = "Situation", menuName = "Situation", order = 0)]
 public class Situation : ScriptableObject
 {
@@ -29,26 +36,27 @@ public class Situation : ScriptableObject
     public bool isDone;
 
     private Dialogue _answer;
-    private void Start()
-    {
+    private Result _result;
 
-    }
 
     public int CheckChoice(AccessoryType choosenType)
     {
         if(choosenType == rightOption)
         {
             _answer = ChooseDialogue(rightOptionAnswers);
+            _result = Result.Happy;
             return 100;
         }
         else if(choosenType == wrongOption)
         {
             _answer = ChooseDialogue(wrongOptionAnswers);
+            _result = Result.Sad;
             return 0;
         }
         else
         {
             _answer = ChooseDialogue(neutralOptionAnswers);
+            _result = Result.Neutral;
             return 50;
         }
     }
@@ -68,7 +76,10 @@ public class Situation : ScriptableObject
         return ChooseDescription(descriptions);
     }
 
-
+    public Result GetResult()
+    {
+        return _result;
+    }
 
     public Dialogue ChooseDialogue(List<Dialogue> dialogues)
     {

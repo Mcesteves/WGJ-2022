@@ -21,7 +21,6 @@ public class SelectionController : MonoBehaviour
     private int _points;
     [SerializeField]
     private Sprite earlessHappyCat;
-    private Sprite earlessSadCat;
 
 
     private void Awake()
@@ -54,6 +53,7 @@ public class SelectionController : MonoBehaviour
     public void PressYes()
     {
         _points += activeSituation.CheckChoice(selectedAccessory);
+        SelectCatSprite();
         _dialogueManager.StartDialog(activeSituation.GetAnswer(), false);
     }
 
@@ -90,6 +90,19 @@ public class SelectionController : MonoBehaviour
         catObject.SetActive(true);
         _dialogueManager.StartDialog(activeSituation.GetIntroduction(), true);
         ShowSituation();
+    }
+
+    public void SelectCatSprite()
+    {
+        Result result = activeSituation.GetResult();
+        if(result == Result.Happy)
+        {
+            catObject.GetComponent<Image>().sprite = activeCat.happySprite;
+        }
+        else if(result == Result.Sad)
+        {
+            catObject.GetComponent<Image>().sprite = activeCat.sadSprite;
+        }
     }
 
 }

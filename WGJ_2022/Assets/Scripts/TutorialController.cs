@@ -26,10 +26,10 @@ public class TutorialController : MonoBehaviour
         _selectionController.ShowSituation();
     }
 
-
     IEnumerator StartTutorialCoroutine()
     {
         yield return new WaitForSeconds(1f);
         StartTutorial();
     }
+
 }

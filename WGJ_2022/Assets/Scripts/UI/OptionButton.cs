@@ -22,6 +22,7 @@ public class OptionButton : MonoBehaviour
             selectionController.catObject.GetComponent<Image>().sprite = selectionController.activeCat.earlessSprite;
             accessoryObj.SetActive(false);
             accessoryObjBack.SetActive(false);
+            selectionController.selectedAccessory = accessory.type;
             return;
         }
         selectionController.catObject.GetComponent<Image>().sprite = selectionController.activeCat.neutralSprite;
