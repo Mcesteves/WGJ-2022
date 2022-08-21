@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9232d575a1a77cb4da05231af5670c99, type: 3}
-  m_Name: Cowboy Hat
+  m_Name: Comboy Hat
   m_EditorClassIdentifier: 
   type: 6
-  sprite: {fileID: -261080144, guid: 111b4bb80a0b1ad43b076098252cb24f, type: 3}
+  sprite: {fileID: -557121530, guid: 83a3274be1f11ef4a850a4951acce78d, type: 3}
+  backSprite: {fileID: 0}
+  objectSprite: {fileID: 21300000, guid: 08578623623c030459b3e4f43b316be2, type: 3}

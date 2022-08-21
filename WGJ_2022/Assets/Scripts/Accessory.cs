@@ -23,4 +23,6 @@ public class Accessory : ScriptableObject
 {
     public AccessoryType type;
     public Sprite sprite;
+    public Sprite backSprite;
+    public Sprite objectSprite;
 }

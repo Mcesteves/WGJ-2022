@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Duct tape
   m_EditorClassIdentifier: 
   type: 8
-  sprite: {fileID: -66426525, guid: 9440b6231301e0b48aaf77ecbb696a88, type: 3}
+  sprite: {fileID: 404639450, guid: 3a32a157ef614ad4ea2bc81791b3a7ce, type: 3}
