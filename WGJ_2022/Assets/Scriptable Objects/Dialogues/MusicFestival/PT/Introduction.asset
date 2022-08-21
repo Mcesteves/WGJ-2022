@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9690334550b34c4b8a5c73cd43a54e0, type: 3}
   m_Name: Introduction
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - "Eh? Ah, ol\xE1. Meu nome \xE9 Castiel. Um festival de m\xFAsica chegou \xE0
+    cidade recentemente e eles se instalaram pr\xF3ximo \xE0 minha casa."
+  - "Me pergunto o que fazer agora\u2026 O que sugere nesse caso?"

@@ -16,9 +16,14 @@ MonoBehaviour:
   cat: {fileID: 11400000, guid: 099de70367c812848bce39676c7baabd, type: 2}
   rightOption: 4
   wrongOption: 11
-  rightOptionAnswers: []
-  wrongOptionAnswers: []
-  neutralOptionAnswers: []
-  introductions: []
-  descriptions: []
+  rightOptionAnswers:
+  - {fileID: 11400000, guid: 84d70bc4d2d6b3947a7e5be9ddf6643b, type: 2}
+  wrongOptionAnswers:
+  - {fileID: 11400000, guid: 8047f20bb53f19a4da03523e2f53ee68, type: 2}
+  neutralOptionAnswers:
+  - {fileID: 11400000, guid: 605cb30f658d221428718c8c3f1b4af8, type: 2}
+  introductions:
+  - {fileID: 11400000, guid: 6f144612601e0704183011cbadb2c50c, type: 2}
+  descriptions:
+  - Festa de Natal
   started: 0

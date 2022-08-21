@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9690334550b34c4b8a5c73cd43a54e0, type: 3}
   m_Name: Introduction
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - "Bom dia! Meu nome \xE9 Gris, e meus amigos acham que eu sou uma cin\xE9fila
+    chata. Eu acho que \xE9 bobagem, pois s\xF3 tenho alguns princ\xEDpios, sabe?"
+  - "Estou indo para uma sess\xE3o agora, como voc\xEA acha que eu deveria ir hoje?"

@@ -333,9 +333,15 @@ MonoBehaviour:
   activeCat: {fileID: 11400000, guid: 187bf989156245945ae6d6485c8bd6dd, type: 2}
   activeSituation: {fileID: 11400000, guid: 595226872e529374fb74acd108caafb1, type: 2}
   catObject: {fileID: 809961722}
+  accessory: {fileID: 402423162}
+  accessoryBack: {fileID: 717018994}
   situationDescription: {fileID: 1495543735}
   situations:
   - {fileID: 11400000, guid: 595226872e529374fb74acd108caafb1, type: 2}
+  - {fileID: 11400000, guid: 5d96b730fc7e2ee4a87d3bf87a0130c9, type: 2}
+  - {fileID: 11400000, guid: 89949778c494af2418bff831c46e996d, type: 2}
+  - {fileID: 11400000, guid: fa3fd6c1d3c84c747af11b435f772ed5, type: 2}
+  - {fileID: 11400000, guid: b1e7fb50f20f9a54792b0b203862f65b, type: 2}
   selectedAccessory: 0
 --- !u!114 &140248588
 MonoBehaviour:

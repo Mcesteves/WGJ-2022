@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9690334550b34c4b8a5c73cd43a54e0, type: 3}
   m_Name: Introduction
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - "Sauda\xE7\xF5es, camarada! Sou Calvinicius, e fui convidado para um baile de
+    gala. Chique n\xE3o?"
+  - "Confesso que acho engra\xE7ado esse tipo de evento. Todo mundo se veste igual
+    a um pinguim\u2026 Hehe. Mas e a\xED? O que voc\xEA me sugere para essa ocasi\xE3o?"

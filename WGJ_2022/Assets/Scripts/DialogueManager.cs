@@ -11,13 +11,17 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueCanvas;
     public GameObject clickCanvas;
     public GameObject descriptionText;
+
     private Queue<string> _sentences;
 
     private bool _isIntroduction;
+    private bool _isAnswer;
+    private SelectionController _selectionController;
 
     void Start()
     {
         _sentences = new Queue<string>();
+        _selectionController = GetComponent<SelectionController>();
     }
 
     public void StartDialog(Dialogue dialogue, bool isIntroduction)
@@ -25,6 +29,7 @@ public class DialogueManager : MonoBehaviour
         dialogueCanvas.SetActive(true);
         clickCanvas.SetActive(true);
         _isIntroduction = isIntroduction;
+        _isAnswer = !isIntroduction;
         foreach (string sentence in dialogue.sentences)
         {
             _sentences.Enqueue(sentence);
@@ -44,6 +49,11 @@ public class DialogueManager : MonoBehaviour
             {
                 descriptionText.SetActive(true);
                 _isIntroduction = false;
+            }
+            if (_isAnswer)
+            {
+                _isAnswer = false;
+                _selectionController.Next();
             }
             return;
         }

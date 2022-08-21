@@ -16,9 +16,14 @@ MonoBehaviour:
   cat: {fileID: 11400000, guid: 187bf989156245945ae6d6485c8bd6dd, type: 2}
   rightOption: 3
   wrongOption: 2
-  rightOptionAnswers: []
-  wrongOptionAnswers: []
-  neutralOptionAnswers: []
-  introductions: []
-  descriptions: []
+  rightOptionAnswers:
+  - {fileID: 11400000, guid: 6e74ac59676a4dd4e92325e0c8eb32ef, type: 2}
+  wrongOptionAnswers:
+  - {fileID: 11400000, guid: f79851e7618cf6847bc34ab5ab42ff3d, type: 2}
+  neutralOptionAnswers:
+  - {fileID: 11400000, guid: 61025082aceabda42ab72a394fe78c81, type: 2}
+  introductions:
+  - {fileID: 11400000, guid: 243f7d53777e4674bb106cf7ce177456, type: 2}
+  descriptions:
+  - Baile de gala
   started: 0

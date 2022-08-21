@@ -11,6 +11,8 @@ public class SelectionController : MonoBehaviour
     public Cat activeCat;
     public Situation activeSituation;
     public GameObject catObject;
+    public GameObject accessory;
+    public GameObject accessoryBack;
     public TextMeshProUGUI situationDescription;
 
     public List<Situation> situations;
@@ -40,7 +42,6 @@ public class SelectionController : MonoBehaviour
     {
         int points = activeSituation.CheckChoice(selectedAccessory);
         _dialogueManager.StartDialog(activeSituation.GetAnswer(), false);
-        //Next();
     }
 
     public void PressNo()
@@ -61,10 +62,13 @@ public class SelectionController : MonoBehaviour
     IEnumerator ShowNextCustomer()
     {
         catObject.SetActive(false);
+        accessory.SetActive(false);
+        accessoryBack.SetActive(false);
         yield return new WaitForSeconds(2f);
         SortSituation();
         catObject.SetActive(true);
         _dialogueManager.StartDialog(activeSituation.GetIntroduction(), true);
+        ShowSituation();
     }
 
 }

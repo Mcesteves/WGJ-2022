@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9690334550b34c4b8a5c73cd43a54e0, type: 3}
   m_Name: Introduction
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - "Ol\xE1! Sou Mimi, e recebi um convite para uma festa de natal na casa dos meus
+    av\xF3s. "
+  - "Eles gostam muito de enviar os convites em datas aleat\xF3rias e eu n\xE3o fa\xE7o
+    ideia do porqu\xEA."
+  - "Na verdade, sempre achei o natal uma \xE9poca meio esquisita, mas \xE9 o feriado
+    favorito de muita gente. Como ser\xE1 que eu deveria comparecer no dia?"
