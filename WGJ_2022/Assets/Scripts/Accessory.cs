@@ -17,7 +17,9 @@ public enum AccessoryType
     Veil,
     ChristmasCap
 }
-public class Accessory : MonoBehaviour
+
+[CreateAssetMenu(fileName = "Accessory", menuName = "Accessory", order = 0)]
+public class Accessory : ScriptableObject
 {
     public AccessoryType type;
     public Sprite sprite;
