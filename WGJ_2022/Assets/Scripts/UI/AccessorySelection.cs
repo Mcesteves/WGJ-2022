@@ -13,6 +13,9 @@ public class AccessorySelection : MonoBehaviour
     void Start()
     {
         _index = 0;
+        options[0].GetComponent<OptionButton>().accessory = accessories[_index];
+        options[1].GetComponent<OptionButton>().accessory = accessories[_index + 1];
+        options[2].GetComponent<OptionButton>().accessory = accessories[_index + 2];
     }
 
     public void ChangeOptionsUp()
@@ -22,9 +25,7 @@ public class AccessorySelection : MonoBehaviour
         else
             _index += 3;
 
-        options[0].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[_index].sprite;
-        options[1].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[_index + 1].sprite;
-        options[2].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[_index + 2].sprite;
+        ChangeSprite(_index);
     }
 
     public void ChangeOptionsDown()
@@ -34,8 +35,16 @@ public class AccessorySelection : MonoBehaviour
         else
             _index -= 3;
 
-        options[0].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[_index].sprite;
-        options[1].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[_index + 1].sprite;
-        options[2].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[_index + 2].sprite;
+        ChangeSprite(_index);  
+    }
+
+    public void ChangeSprite(int index)
+    {
+        options[0].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[index].sprite;
+        options[0].GetComponent<OptionButton>().accessory = accessories[index];
+        options[1].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[index + 1].sprite;
+        options[1].GetComponent<OptionButton>().accessory = accessories[index + 1];
+        options[2].transform.GetChild(0).gameObject.GetComponent<Image>().sprite = accessories[index + 2].sprite;
+        options[2].GetComponent<OptionButton>().accessory = accessories[index + 2];
     }
 }

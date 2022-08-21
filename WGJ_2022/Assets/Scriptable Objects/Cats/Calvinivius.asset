@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83492a508a1d7a647bda1c470e7b81a3, type: 3}
+  m_Name: Calvinivius
+  m_EditorClassIdentifier: 
+  catName: Calvinicius
+  happySprite: {fileID: 21300000, guid: 160f1e691bd8b6542a4594f90fdf13c3, type: 3}
+  neutralSprite: {fileID: 21300000, guid: d02a4692747d8984c9c8e69735478948, type: 3}
+  sadSprite: {fileID: 21300000, guid: cdd1574e1bd89294b9af67e3f6a43467, type: 3}
+  isSmaller: 1

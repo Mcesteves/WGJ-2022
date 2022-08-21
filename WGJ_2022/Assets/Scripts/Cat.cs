@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cat : MonoBehaviour
+[CreateAssetMenu(fileName = "Cat", menuName = "Cat", order = 0)]
+public class Cat : ScriptableObject
 {
     public string catName;
-    public Situation situation;
-    
+    public Sprite happySprite;
+    public Sprite neutralSprite;
+    public Sprite sadSprite;
+    public bool isSmaller;
+
+
     // Start is called before the first frame update
     void Start()
     {

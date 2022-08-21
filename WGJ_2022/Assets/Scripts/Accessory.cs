@@ -25,4 +25,5 @@ public class Accessory : ScriptableObject
     public Sprite sprite;
     public Sprite backSprite;
     public Sprite objectSprite;
+    public bool hasBack;
 }

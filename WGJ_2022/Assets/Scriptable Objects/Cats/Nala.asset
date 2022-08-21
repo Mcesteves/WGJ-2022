@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83492a508a1d7a647bda1c470e7b81a3, type: 3}
+  m_Name: Nala
+  m_EditorClassIdentifier: 
+  catName: Nala
+  happySprite: {fileID: 21300000, guid: 37efb4f92578e5743a92e2e566123d29, type: 3}
+  neutralSprite: {fileID: 21300000, guid: 290bc945da0a737428b327b4d75ab16f, type: 3}
+  sadSprite: {fileID: 21300000, guid: a9b313e3250ddab42a3efec0d2186401, type: 3}
+  isSmaller: 1

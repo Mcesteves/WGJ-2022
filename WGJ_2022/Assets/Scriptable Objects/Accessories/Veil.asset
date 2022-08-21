@@ -16,3 +16,4 @@ MonoBehaviour:
   sprite: {fileID: 1646034559, guid: 1ed959896b4ffc34cb0130d197597791, type: 3}
   backSprite: {fileID: 21300000, guid: 139fc9ba344d10142b04ef12875e7bdc, type: 3}
   objectSprite: {fileID: 21300000, guid: 0c9130050361f2240ba49145aafe7246, type: 3}
+  hasBack: 1

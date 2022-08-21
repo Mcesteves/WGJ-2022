@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec47b68a1aa1f674895e943a9883de53
+guid: a77acdab3d101c54aa8d7f5f732c1131
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nao_0
+      name: exemplo botoes_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 9
-        width: 133
-        height: 79
+        x: 45
+        y: 5
+        width: 1279
+        height: 721
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 056103fd1bac53a47b9e65a385f7978c
-      internalID: -993462518
+      spriteID: 823f38ae35f21d74db4d4dd4b8b755be
+      internalID: 1990480305
       vertices: []
       indices: 
       edges: []
@@ -139,7 +139,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 85a5d3818a6292e4a9a511e26fd298b9
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nao_0: -993462518
+      exemplo botoes_0: 1990480305
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
