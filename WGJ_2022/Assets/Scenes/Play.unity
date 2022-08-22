@@ -489,12 +489,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4d6803a686d974f9332945956541ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EndCanvas: {fileID: 73818863}
-  EndPanel: {fileID: 754959710}
+  endCanvas: {fileID: 73818863}
+  endPanel: {fileID: 754959710}
+  endText: {fileID: 484380071}
   points: 0
-  goodEnd: {fileID: 21300000, guid: 869da0840d272234a8f8b4d0a8c2fab8, type: 3}
+  amazingEnd: {fileID: 0}
   badEnd: {fileID: 21300000, guid: 80a14767bd6edc14b8d83291e56633ca, type: 3}
   neutralEnd: {fileID: 21300000, guid: b64194dade3915f4fb34e33774fcb8ef, type: 3}
+  amazingEndText: "Uma verdadeira mente fora da caixa! Voc\xEA sabe mesmo quebrar
+    as regras e entender o que \xE9 legal de verdade!"
+  goodEndText: "Pegou o esquema! Se n\xE3o tivesse errado umas coisinhas seria maravilhoso\u2026"
+  neutralEndText: "Ah, voc\xEA t\xE1 pegando o jeito! Mas ainda d\xE1 pra melhorar,
+    viu?"
+  badEndText: "Voc\xEA definitivamente levou tudo ao p\xE9 da letra\u2026 Mas n\xE3o
+    se preocupe, tente pensar um pouco fora da caixa, pode ser divertido!"
 --- !u!1 &158472107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,8 +1188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.322, y: -25.063}
-  m_SizeDelta: {x: 171.357, y: 100.126}
+  m_AnchoredPosition: {x: 417, y: -0.000015259}
+  m_SizeDelta: {x: 1041.401, y: 547.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484380071
 MonoBehaviour:
@@ -1203,10 +1211,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: FIM
+  m_text: "Voc\xEA definitivamente levou tudo ao p\xE9 da letra\u2026 Mas n\xE3o
+    se preocupe, tente pensar um pouco fora da caixa, pode ser divertido!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 717788272c36e7c4f9313d3b44224d90, type: 2}
+  m_sharedMaterial: {fileID: 2837363694324032316, guid: 717788272c36e7c4f9313d3b44224d90, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1230,15 +1239,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
+  m_fontSize: 72
   m_fontSizeBase: 80
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 30
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1924,8 +1933,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 869da0840d272234a8f8b4d0a8c2fab8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

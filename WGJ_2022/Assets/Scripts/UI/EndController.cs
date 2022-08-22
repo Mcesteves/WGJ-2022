@@ -2,19 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class EndController : MonoBehaviour
 {
-    public GameObject EndCanvas;
-    public Image EndPanel;
+    public GameObject endCanvas;
+    public Image endPanel;
+    public TextMeshProUGUI endText;
     public int points;
 
     [SerializeField]
-    private Sprite goodEnd;
+    private Sprite amazingEnd;
     [SerializeField]
     private Sprite badEnd;
     [SerializeField]
     private Sprite neutralEnd;
+    [SerializeField]
+    private string amazingEndText;
+    [SerializeField]
+    private string goodEndText;
+    [SerializeField]
+    private string neutralEndText;
+    [SerializeField]
+    private string badEndText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,14 +40,27 @@ public class EndController : MonoBehaviour
 
     public void ShowEnd()
     {
-        if (points >= 300)
-            EndPanel.sprite = goodEnd;
-        else if(points >= 500 )
-            EndPanel.sprite = neutralEnd;
+        if (points >= 500)
+        {
+            endPanel.sprite = amazingEnd;
+            endText.text = amazingEndText;
+        }           
+        else if(points >= 300)
+        {
+            endPanel.sprite = neutralEnd;
+            endText.text = goodEndText;
+        }
+        else if (points >= 50)
+        {
+            endPanel.sprite = neutralEnd;
+            endText.text = neutralEndText;
+        }
         else
-            EndPanel.sprite = badEnd;
-
-        EndCanvas.SetActive(true);
+        {
+            endPanel.sprite = badEnd;
+            endText.text = badEndText;
+        }
+        endCanvas.SetActive(true);
     }
 
 
