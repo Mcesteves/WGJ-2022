@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 140248587}
   - component: {fileID: 140248588}
   - component: {fileID: 140248589}
+  - component: {fileID: 140248590}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -438,7 +439,6 @@ MonoBehaviour:
   accessory: {fileID: 402423162}
   accessoryBack: {fileID: 717018994}
   situationDescription: {fileID: 1495543735}
-  EndCanvas: {fileID: 73818863}
   situations:
   - {fileID: 11400000, guid: 595226872e529374fb74acd108caafb1, type: 2}
   - {fileID: 11400000, guid: 5d96b730fc7e2ee4a87d3bf87a0130c9, type: 2}
@@ -477,6 +477,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialSituation: {fileID: 11400000, guid: 5a5e9c2b0e1a6114486ac8760e31f9ea, type: 2}
+--- !u!114 &140248590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140248584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4d6803a686d974f9332945956541ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EndCanvas: {fileID: 73818863}
+  EndPanel: {fileID: 754959710}
+  points: 0
+  goodEnd: {fileID: 21300000, guid: 869da0840d272234a8f8b4d0a8c2fab8, type: 3}
+  badEnd: {fileID: 21300000, guid: 80a14767bd6edc14b8d83291e56633ca, type: 3}
+  neutralEnd: {fileID: 21300000, guid: b64194dade3915f4fb34e33774fcb8ef, type: 3}
 --- !u!1 &158472107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +1917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.70980394}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

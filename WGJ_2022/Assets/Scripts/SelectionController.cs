@@ -12,13 +12,12 @@ public class SelectionController : MonoBehaviour
     public GameObject accessory;
     public GameObject accessoryBack;
     public TextMeshProUGUI situationDescription;
-    public GameObject EndCanvas;
     public List<Situation> situations;
     [HideInInspector] public AccessoryType selectedAccessory;
 
     private DialogueManager _dialogueManager;
+    private EndController _endController;
     private int clients;
-    private int _points;
     [SerializeField]
     private Sprite earlessHappyCat;
 
@@ -29,10 +28,8 @@ public class SelectionController : MonoBehaviour
         {
             situation.isDone = false;
         }
-    }
-    void Start()
-    {
-        _dialogueManager = GetComponent<DialogueManager>();      
+        _dialogueManager = GetComponent<DialogueManager>();
+        _endController = GetComponent<EndController>();
     }
 
     public void SortSituation()
@@ -52,7 +49,7 @@ public class SelectionController : MonoBehaviour
 
     public void PressYes()
     {
-        _points += activeSituation.CheckChoice(selectedAccessory);
+        _endController.points += activeSituation.CheckChoice(selectedAccessory);
         SelectCatSprite();
         _dialogueManager.StartDialog(activeSituation.GetAnswer(), false);
     }
@@ -67,18 +64,13 @@ public class SelectionController : MonoBehaviour
         StartCoroutine(ShowNextCustomer());
     }
 
-    public void ShowEnd()
-    {
-        EndCanvas.SetActive(true);
-    }
-
     IEnumerator ShowNextCustomer()
     {
         clients++;
         if (clients == 5)
         {
             yield return new WaitForSeconds(0.5f);
-            ShowEnd();
+            _endController.ShowEnd();
             yield break;
         }  
         catObject.SetActive(false);
