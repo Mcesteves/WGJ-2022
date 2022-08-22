@@ -33,24 +33,20 @@ public class MenuManager : MonoBehaviour
 
     public void OpenSettings()
     {
-        MainMenuUI.SetActive(false);
         SettingsUI.SetActive(true);
     }
 
     public void CloseSettings()
     {
         SettingsUI.SetActive(false);
-        MainMenuUI.SetActive(true); 
     }
     public void OpenCredits()
     {
-        MainMenuUI.SetActive(false);
         CreditsUI.SetActive(true);
     }
 
     public void CloseCredits()
     {
         CreditsUI.SetActive(false);
-        MainMenuUI.SetActive(true);
     }
 }
