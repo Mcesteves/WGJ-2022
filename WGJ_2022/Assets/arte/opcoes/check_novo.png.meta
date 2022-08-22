@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a88c52cb351ba9d48aade51948dc9049
+guid: 9a49845cb473acc42ba6b71e1a0ac0c5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,17 +100,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fundo_textinho_0
+      name: check_novo_0
       rect:
         serializedVersion: 2
-        x: 715
-        y: 446
-        width: 220
-        height: 43
+        x: 861
+        y: 283
+        width: 55
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdf636a625252724e9a10a6feb587624
-      internalID: 157454921
+      spriteID: 841a9786c4a5be645ae5b844108ee882
+      internalID: 1034559740
       vertices: []
       indices: 
       edges: []
@@ -127,7 +139,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6f3adffc47656334c82257b8ccf94524
+    spriteID: be8f35dab982daf47b51260b5e1188f6
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fundo_textinho_0: 157454921
+      check_novo_0: 1034559740
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
