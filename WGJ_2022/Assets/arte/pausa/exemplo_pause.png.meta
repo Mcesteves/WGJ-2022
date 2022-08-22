@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6118ffb3b927c0e4494ffa995f438f2b
+guid: 690b9df8af1fd4e4487697c745b257ae
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,26 +100,38 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: botao_sair_0
+      name: exemplo_pause_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
-        width: 343
-        height: 102
+        x: 54
+        y: 9
+        width: 1282
+        height: 722
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d59bf4d9b5757ea4b918a9dfb9f03dd5
-      internalID: 1512843766
+      spriteID: 430b8c4ce6f3e9b40b80292a98af6043
+      internalID: 2046210499
       vertices: []
       indices: 
       edges: []
@@ -127,7 +139,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d84fd8b7b49f9174cbbda41c84c27b4c
+    spriteID: 42e405b917ddb2f4e886b84e73b6c059
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      botao_sair_0: 1512843766
+      exemplo_pause_0: 2046210499
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
