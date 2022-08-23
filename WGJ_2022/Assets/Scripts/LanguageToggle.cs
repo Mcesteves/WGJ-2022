@@ -9,7 +9,8 @@ public class LanguageToggle : MonoBehaviour
     public Toggle otherToggle;
     void Start()
     {
-        
+        if (LanguageManager.instance.activeLanguage == toggleLanguage)
+            GetComponent<Toggle>().isOn = true;
     }
 
     public void SelectLanguage()

@@ -18,12 +18,17 @@ MonoBehaviour:
   wrongOption: 0
   rightOptionAnswers:
   - {fileID: 11400000, guid: 428ccb656f64e1745a4d7fd1fb277b8f, type: 2}
+  - {fileID: 11400000, guid: 86e917913b0394a43a6f66f1696419f3, type: 2}
   wrongOptionAnswers:
   - {fileID: 11400000, guid: 3d0bf874e4bd79746ac4452e25c5308f, type: 2}
+  - {fileID: 11400000, guid: f1721e039b96ec5429b2ead03986e67d, type: 2}
   neutralOptionAnswers:
   - {fileID: 11400000, guid: 9d8423fbd2641cb4780845d2ab62b0a2, type: 2}
+  - {fileID: 11400000, guid: 2f74e8608b877684e8682a6d39ba8719, type: 2}
   introductions:
   - {fileID: 11400000, guid: d92200d1611aa824d886f595866b6248, type: 2}
+  - {fileID: 11400000, guid: 68bcec9a3c8372a4c9cca336d1c7581d, type: 2}
   descriptions:
   - "\xC1rvore"
-  started: 0
+  - Tree
+  isDone: 0

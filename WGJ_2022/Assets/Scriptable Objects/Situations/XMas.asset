@@ -18,12 +18,17 @@ MonoBehaviour:
   wrongOption: 11
   rightOptionAnswers:
   - {fileID: 11400000, guid: 84d70bc4d2d6b3947a7e5be9ddf6643b, type: 2}
+  - {fileID: 11400000, guid: 0c981aa4d3ae4d6469931c6e5ec1488c, type: 2}
   wrongOptionAnswers:
   - {fileID: 11400000, guid: 8047f20bb53f19a4da03523e2f53ee68, type: 2}
+  - {fileID: 11400000, guid: d1a200479dc81274daca7d64699a4174, type: 2}
   neutralOptionAnswers:
   - {fileID: 11400000, guid: 605cb30f658d221428718c8c3f1b4af8, type: 2}
+  - {fileID: 11400000, guid: 9d2bd20e72ab2bc4ba699e5f25dc19dd, type: 2}
   introductions:
   - {fileID: 11400000, guid: 6f144612601e0704183011cbadb2c50c, type: 2}
+  - {fileID: 11400000, guid: 962248ce56d10ad4883b3838d57d7675, type: 2}
   descriptions:
   - Festa de Natal
-  started: 0
+  - Christmas Party
+  isDone: 0

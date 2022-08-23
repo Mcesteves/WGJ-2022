@@ -18,12 +18,17 @@ MonoBehaviour:
   wrongOption: 2
   rightOptionAnswers:
   - {fileID: 11400000, guid: 6e74ac59676a4dd4e92325e0c8eb32ef, type: 2}
+  - {fileID: 11400000, guid: 10980d49f57bdf9459d9a7ca7026755e, type: 2}
   wrongOptionAnswers:
   - {fileID: 11400000, guid: f79851e7618cf6847bc34ab5ab42ff3d, type: 2}
+  - {fileID: 11400000, guid: d8691fe532784c448b1962f6fc900478, type: 2}
   neutralOptionAnswers:
   - {fileID: 11400000, guid: 61025082aceabda42ab72a394fe78c81, type: 2}
+  - {fileID: 11400000, guid: 8148a3050b1842b4da3d1903ff7e60d6, type: 2}
   introductions:
   - {fileID: 11400000, guid: 243f7d53777e4674bb106cf7ce177456, type: 2}
+  - {fileID: 11400000, guid: ab8e18fc51a692b4197e4c6b3729eeda, type: 2}
   descriptions:
   - Baile de gala
-  started: 0
+  - Vintage Gala
+  isDone: 0
