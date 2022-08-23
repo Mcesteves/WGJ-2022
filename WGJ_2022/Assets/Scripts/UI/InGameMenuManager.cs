@@ -44,4 +44,9 @@ public class InGameMenuManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1.0f;
     }
+
+    public void PlayButtonSound()
+    {
+        AudioManager.instance.Play("Clique");
+    }
 }

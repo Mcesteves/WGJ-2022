@@ -89,6 +89,7 @@ public class SelectionController : MonoBehaviour
         Result result = activeSituation.GetResult();
         if(result == Result.Happy)
         {
+            AudioManager.instance.Play("Miau");
             catObject.GetComponent<Image>().sprite = activeCat.happySprite;
         }
         else if(result == Result.Sad)

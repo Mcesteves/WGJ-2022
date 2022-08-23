@@ -12,7 +12,7 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioManager.instance.Play("Background");
     }
 
     // Update is called once per frame
@@ -48,5 +48,10 @@ public class MenuManager : MonoBehaviour
     public void CloseCredits()
     {
         CreditsUI.SetActive(false);
+    }
+
+    public void PlayButtonSound()
+    {
+        AudioManager.instance.Play("Clique");
     }
 }
