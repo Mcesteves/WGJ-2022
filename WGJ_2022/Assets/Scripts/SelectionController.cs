@@ -67,7 +67,7 @@ public class SelectionController : MonoBehaviour
     IEnumerator ShowNextCustomer()
     {
         clients++;
-        if (clients == 5)
+        if (clients == 6)
         {
             yield return new WaitForSeconds(0.5f);
             _endController.ShowEnd();

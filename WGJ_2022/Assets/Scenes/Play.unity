@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -509,7 +509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &73818864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,9 +921,9 @@ MonoBehaviour:
   endPanel: {fileID: 754959710}
   endText: {fileID: 484380071}
   points: 0
-  amazingEnd: {fileID: 0}
-  badEnd: {fileID: 21300000, guid: 80a14767bd6edc14b8d83291e56633ca, type: 3}
-  neutralEnd: {fileID: 21300000, guid: b64194dade3915f4fb34e33774fcb8ef, type: 3}
+  amazingEnd: {fileID: 21300000, guid: 869da0840d272234a8f8b4d0a8c2fab8, type: 3}
+  badEnd: {fileID: 21300000, guid: b64194dade3915f4fb34e33774fcb8ef, type: 3}
+  neutralEnd: {fileID: 21300000, guid: 80a14767bd6edc14b8d83291e56633ca, type: 3}
   amazingEndText: "Uma verdadeira mente fora da caixa! Voc\xEA sabe mesmo quebrar
     as regras e entender o que \xE9 legal de verdade!"
   goodEndText: "Pegou o esquema! Se n\xE3o tivesse errado umas coisinhas seria maravilhoso\u2026"
