@@ -18,12 +18,17 @@ MonoBehaviour:
   wrongOption: 10
   rightOptionAnswers:
   - {fileID: 11400000, guid: 571895aed4d2482469871fe4fea6d27e, type: 2}
+  - {fileID: 11400000, guid: 12ed2e9b4fdf363439ef08c11bb0b4e8, type: 2}
   wrongOptionAnswers:
   - {fileID: 11400000, guid: 506e0927d4d20d548a2dfd56ad2fc0bf, type: 2}
+  - {fileID: 11400000, guid: 997cd82d22afe714e8b23107841f9246, type: 2}
   neutralOptionAnswers:
   - {fileID: 11400000, guid: aa2f6a6cc349b7344ba9f9f2e9a0d39c, type: 2}
+  - {fileID: 11400000, guid: 5875fe2d960f34144a76bd4a7fdac367, type: 2}
   introductions:
   - {fileID: 11400000, guid: 0ed781da77873b94492ca3fda559fff4, type: 2}
+  - {fileID: 11400000, guid: 4c54db376a3cea54d864f3ba32bf96e4, type: 2}
   descriptions:
   - "Vel\xF3rio"
-  started: 0
+  - Funeral
+  isDone: 0

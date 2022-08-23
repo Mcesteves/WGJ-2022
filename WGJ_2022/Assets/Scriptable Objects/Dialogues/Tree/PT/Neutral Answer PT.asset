@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9690334550b34c4b8a5c73cd43a54e0, type: 3}
+  m_Name: Neutral Answer PT
+  m_EditorClassIdentifier: 
+  sentences:
+  - "Quem sabe a dire\xE7\xE3o n\xE3o reveja meu papel dessa forma? "
+  - "Muito obrigada pela sua ajuda, j\xE1 j\xE1 voc\xEA pega o jeito com a coisa
+    toda!"
+  - "Lembre-se: entender o cliente vai al\xE9m de\u2026"
+  - "Deixa pra l\xE1, hehehe. Boa sorte daqui para frente!"

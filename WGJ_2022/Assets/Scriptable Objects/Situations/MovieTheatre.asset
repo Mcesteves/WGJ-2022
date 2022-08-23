@@ -18,12 +18,17 @@ MonoBehaviour:
   wrongOption: 5
   rightOptionAnswers:
   - {fileID: 11400000, guid: 662105c31d5cabc42a2a860c0251e725, type: 2}
+  - {fileID: 11400000, guid: a360a87edab3a074bb6bb46d34431bca, type: 2}
   wrongOptionAnswers:
   - {fileID: 11400000, guid: 438141eccb062e94fb73bc16f2dfc78f, type: 2}
+  - {fileID: 11400000, guid: 51f05f773c31d734e94dff2d4ab2cf5f, type: 2}
   neutralOptionAnswers:
   - {fileID: 11400000, guid: f972c3d0d9b0e3a44a051756eb28ecde, type: 2}
+  - {fileID: 11400000, guid: 7db055dddf0cf634a803fd46fed23573, type: 2}
   introductions:
   - {fileID: 11400000, guid: 78d04518efd222b4eac9106b01c86183, type: 2}
+  - {fileID: 11400000, guid: 2f5daf96f011a2b4ab863f686289ae50, type: 2}
   descriptions:
   - "Sess\xE3o de cinema"
-  started: 0
+  - Movie Session
+  isDone: 0

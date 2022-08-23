@@ -499,7 +499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 38b7775f60c69f64d848c192256948a9, type: 3}
+  - {fileID: -1936583773, guid: 38b7775f60c69f64d848c192256948a9, type: 3}
   - {fileID: 1162526123, guid: 478411aced961a64da697c1d69bd4064, type: 3}
 --- !u!1 &142329037
 GameObject:
@@ -3144,6 +3144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 933610028}
   - component: {fileID: 933610029}
+  - component: {fileID: 933610030}
   m_Layer: 5
   m_Name: Toggle EN
   m_TagString: Untagged
@@ -3218,8 +3219,34 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 933610030}
+        m_TargetAssemblyTypeName: LanguageToggle, Assembly-CSharp
+        m_MethodName: SelectLanguage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &933610030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933610027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6efbaac8c1f05341945ea120484c37c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleLanguage: 1
+  otherToggle: {fileID: 1080220146}
 --- !u!1 &935247593
 GameObject:
   m_ObjectHideFlags: 0
@@ -3774,6 +3801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080220145}
   - component: {fileID: 1080220146}
+  - component: {fileID: 1080220147}
   m_Layer: 5
   m_Name: Toggle PT
   m_TagString: Untagged
@@ -3848,8 +3876,34 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1080220147}
+        m_TargetAssemblyTypeName: LanguageToggle, Assembly-CSharp
+        m_MethodName: SelectLanguage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
+--- !u!114 &1080220147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080220144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6efbaac8c1f05341945ea120484c37c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleLanguage: 0
+  otherToggle: {fileID: 933610029}
 --- !u!1 &1128982008
 GameObject:
   m_ObjectHideFlags: 0
@@ -4547,7 +4601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 38b7775f60c69f64d848c192256948a9, type: 3}
+  - {fileID: -1936583773, guid: 38b7775f60c69f64d848c192256948a9, type: 3}
   - {fileID: 1162526123, guid: 478411aced961a64da697c1d69bd4064, type: 3}
 --- !u!1 &1413277743
 GameObject:
