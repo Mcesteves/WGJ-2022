@@ -18,13 +18,13 @@ public class EndController : MonoBehaviour
     [SerializeField]
     private Sprite neutralEnd;
     [SerializeField]
-    private string amazingEndText;
+    private List<string> amazingEndTexts;
     [SerializeField]
-    private string goodEndText;
+    private List<string> goodEndTexts;
     [SerializeField]
-    private string neutralEndText;
+    private List<string> neutralEndTexts;
     [SerializeField]
-    private string badEndText;
+    private List<string> badEndTexts;
 
     // Start is called before the first frame update
     void Start()
@@ -43,25 +43,35 @@ public class EndController : MonoBehaviour
         if (points >= 500)
         {
             endPanel.sprite = amazingEnd;
-            endText.text = amazingEndText;
+            endText.text = ChooseText(amazingEndTexts);
         }           
         else if(points >= 300)
         {
             endPanel.sprite = neutralEnd;
-            endText.text = goodEndText;
+            endText.text = ChooseText(goodEndTexts);
         }
         else if (points >= 50)
         {
             endPanel.sprite = neutralEnd;
-            endText.text = neutralEndText;
+            endText.text = ChooseText(neutralEndTexts);
         }
         else
         {
             endPanel.sprite = badEnd;
-            endText.text = badEndText;
+            endText.text = ChooseText(badEndTexts);
         }
         endCanvas.SetActive(true);
     }
 
+    private string ChooseText(List<string> texts)
+    {
+        switch (LanguageManager.instance.activeLanguage)
+        {
+            case Language.Portuguese:
+                return texts[0];
+            default:
+                return texts[1];
+        }
+    }
 
 }

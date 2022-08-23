@@ -956,13 +956,22 @@ MonoBehaviour:
   amazingEnd: {fileID: 21300000, guid: 869da0840d272234a8f8b4d0a8c2fab8, type: 3}
   badEnd: {fileID: 21300000, guid: b64194dade3915f4fb34e33774fcb8ef, type: 3}
   neutralEnd: {fileID: 21300000, guid: 80a14767bd6edc14b8d83291e56633ca, type: 3}
-  amazingEndText: "Uma verdadeira mente fora da caixa! Voc\xEA sabe mesmo quebrar
-    as regras e entender o que \xE9 legal de verdade!"
-  goodEndText: "Pegou o esquema! Se n\xE3o tivesse errado umas coisinhas seria maravilhoso\u2026"
-  neutralEndText: "Ah, voc\xEA t\xE1 pegando o jeito! Mas ainda d\xE1 pra melhorar,
-    viu?"
-  badEndText: "Voc\xEA definitivamente levou tudo ao p\xE9 da letra\u2026 Mas n\xE3o
-    se preocupe, tente pensar um pouco fora da caixa, pode ser divertido!"
+  amazingEndTexts:
+  - "Uma verdadeira mente fora da caixa! Voc\xEA sabe mesmo quebrar as regras e entender
+    o que \xE9 legal de verdade!"
+  - A true outside of the box thinker! You really know how to break the rules and
+    to understand what's actually cool!
+  goodEndTexts:
+  - "Pegou o esquema! Se n\xE3o tivesse errado umas coisinhas seria maravilhoso\u2026"
+  - You got it! If you haven't gotten a couple of things wrong, it'd be marvelous...
+  neutralEndTexts:
+  - "Ah, voc\xEA t\xE1 pegando o jeito! Mas ainda d\xE1 pra melhorar, viu?"
+  - Oh, you're starting to understand! But you can still get better, right?
+  badEndTexts:
+  - "Voc\xEA definitivamente levou tudo ao p\xE9 da letra\u2026 Mas n\xE3o se preocupe,
+    tente pensar um pouco fora da caixa, pode ser divertido!"
+  - You're definitely too literal... but don't worry, try to think a little outside
+    of the box, it can be fun!
 --- !u!114 &140248591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5910,7 +5919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 717788272c36e7c4f9313d3b44224d90, type: 2}
   m_sharedMaterial: {fileID: 2837363694324032316, guid: 717788272c36e7c4f9313d3b44224d90, type: 2}
@@ -5937,15 +5946,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
