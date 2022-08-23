@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Introduction EN
   m_EditorClassIdentifier: 
   sentences:
-  - 
+  - "Oh\u2026 How tragic, tragic! My name is Eclipse and I've just been widowed\u2026"
+  - "My wedding was a box of surprises from start to finish\u2026"
+  - "You would definitely be surprised by everything that happened in the meantime\u2026"
